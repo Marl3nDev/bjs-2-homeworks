@@ -139,6 +139,7 @@ class Player {
 		if(this.life - damage <= 0){
 			console.log(`${this.name} получает смертельный урон урон.`);
 			this.life = 0;
+			debugger;
 		}else{
 			this.life -= damage;
 		} 
@@ -382,6 +383,7 @@ class Demourge extends Mage {
 // Процесс игры
 
 function play(takenPlayers) {
+	debugger;
 	const players = [...takenPlayers];
 	do {
 		for(let i = 0; i < players.length; i++){
